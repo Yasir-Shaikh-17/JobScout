@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from './components/Card'
+import Favicon from './assets/favicon.svg'
 
 const App = () => {
   const jobOpenings = [
@@ -107,7 +108,10 @@ const App = () => {
 
   return (
     <>
+    <div className='Name'>
+      <img src={Favicon} alt="haha" />
       <h1>JobScout</h1>
+    </div>
       <div className='parent'>
         {jobOpenings.map(function (e) {
           return <Card key={e.id} logo={e.logo} name={e.companyName} time={e.time} role={e.role} tag1={e.tags[0]} tag2={e.tags[1]} tag3={e.tags[2]} pay={e.pay} location={e.location} />
