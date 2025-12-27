@@ -1,4 +1,5 @@
 import React from 'react'
+import Save from '../assets/save.svg'
 
 const Card = (props) => {
     return (
@@ -8,7 +9,7 @@ const Card = (props) => {
                 <div className="profile"><img src={props.logo} alt="" /></div>
                 <div className="save">
                     <p>Save</p>
-                    <img src="save.svg" alt="Save" />
+                    <img src={Save} alt="Save" />
                 </div>
             </div>
 
